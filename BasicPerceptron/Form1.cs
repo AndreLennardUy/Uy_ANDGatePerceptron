@@ -43,8 +43,8 @@ namespace BasicPerceptron
                 int input1 = int.Parse(txtInput1.Text);
                 int input2 = int.Parse(txtInput2.Text);
                 double result_temp = input1 * weight1 + input2 * weight2 + bias;
-                //int result = (result_temp > 0) ? 1 : 0;
-                txtOutput.Text = "" + result_temp;
+                int result = (result_temp > 0) ? 1 : 0;
+                txtOutput.Text = "" + result;
             }
             catch (Exception exc)
             {
